@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+{% block title %}{{meeting.title}}{% endblock %}
+{% block content %}
+<body>
+<h1>{{ meeting.title }}</h1>
+<p>
+    This meeting has been scheduled on {{ meeting.date }}, at  {{ meeting.start_time }} in <em>{{ meeting.room }}</em>
+</p>
+<a href="{% url 'home'%}"> home</a>
+{% endblock%}
